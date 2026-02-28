@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Message Scheduler | Neeraj Rana</title>
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .project-detail-header {
+            padding-top: 150px;
+            padding-bottom: 50px;
+            text-align: center;
+        }
+
+        .project-title {
+            font-size: 3rem;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, var(--clr-primary), var(--clr-secondary));
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .project-subtitle {
+            color: var(--clr-text-muted);
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 30px;
+            line-height: 1.8;
+        }
+
+        .content-section {
+            padding: 40px 0;
+        }
+
+        .markdown-content h2 {
+            font-size: 1.8rem;
+            margin: 40px 0 20px;
+            color: var(--clr-text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .markdown-content h3 {
+            font-size: 1.3rem;
+            margin: 25px 0 15px;
+            color: var(--clr-text);
+        }
+
+        .markdown-content p {
+            color: var(--clr-text-muted);
+            margin-bottom: 15px;
+            line-height: 1.7;
+        }
+
+        .markdown-content ul,
+        .markdown-content ol {
+            color: var(--clr-text-muted);
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .markdown-content li {
+            margin-bottom: 10px;
+        }
+
+        .code-block {
+            background: rgba(0, 0, 0, 0.4);
+            border: 1px solid var(--clr-border);
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            font-family: monospace;
+            color: #e2e8f0;
+            overflow-x: auto;
+            white-space: pre;
+        }
+
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--clr-secondary);
+            font-weight: 500;
+            margin-bottom: 30px;
+            transition: transform 0.3s ease;
+        }
+
+        .back-link:hover {
+            transform: translateX(-5px);
+        }
+
+        .badge-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 20px;
+        }
+
+        .tech-tag {
+            background: rgba(139, 92, 246, 0.1);
+            color: var(--clr-primary);
+            padding: 6px 16px;
+            border-radius: 50px;
+            font-size: 0.9rem;
+            border: 1px solid rgba(139, 92, 246, 0.2);
+        }
+
+        .github-btn-large {
+            display: inline-flex;
+            align-items: center;
+            gap: 10px;
+            background: #24292e;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .github-btn-large:hover {
+            background: #2f363d;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Abstract Background Effects -->
+    <div class="cursor-glow"></div>
+    <div class="bg-shape shape-1"></div>
+    <div class="bg-shape shape-2"></div>
+
+    <!-- Header -->
+    <header class="site-header scrolled">
+        <div class="nav-container">
+            <a href="index.html" class="logo">
+                <span class="logo-text">NR<span class="dot">.</span></span>
+            </a>
+            <div class="nav-actions">
+                <a href="index.html" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Portfolio</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="container project-detail-header reveal">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            <h1 class="project-title">WhatsApp Message Scheduler using Python 🚀</h1>
+            <p class="project-subtitle">A Python-based automation project that allows users to schedule WhatsApp
+                messages for a future date and time using the Twilio WhatsApp API. This project demonstrates real-world
+                concepts such as API integration, task scheduling, environment variables, and secure credential
+                management.</p>
+
+            <a href="https://github.com/NeerajRana79/whatsapp-message-scheduler-python" target="_blank"
+                class="github-btn-large">
+                <i class="fab fa-github"></i> View Repository on GitHub
+            </a>
+        </div>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="glass-card markdown-content reveal">
+
+                    <h2>✨ Features</h2>
+                    <ul>
+                        <li>📅 <strong>Schedule WhatsApp messages</strong> for a specific date & time</li>
+                        <li>💬 <strong>Send WhatsApp messages</strong> using Twilio API</li>
+                        <li>🔐 <strong>Secure credential handling</strong> using environment variables</li>
+                        <li>🧠 <strong>Beginner-friendly</strong> and well-structured Python code</li>
+                        <li>⚠️ <strong>Proper error handling</strong> and clear console logs</li>
+                    </ul>
+
+                    <h2>🛠️ Technologies Used</h2>
+                    <div class="badge-list">
+                        <span class="tech-tag"><i class="fab fa-python"></i> Python 3</span>
+                        <span class="tech-tag"><i class="fas fa-comment-dots"></i> Twilio WhatsApp API</span>
+                        <span class="tech-tag"><i class="far fa-clock"></i> datetime module</span>
+                        <span class="tech-tag"><i class="fas fa-stopwatch"></i> time module</span>
+                        <span class="tech-tag"><i class="fab fa-git-alt"></i> Git & GitHub</span>
+                    </div>
+
+                    <h2>📂 Project Structure</h2>
+                    <div class="code-block">whatsapp-message-scheduler-python/
+                        │
+                        ├── main.py
+                        ├── requirements.txt
+                        ├── README.md
+                        ├── .gitignore</div>
+
+                    <h2>📦 Installation</h2>
+
+                    <h3>1️⃣ Clone the Repository</h3>
+                    <div class="code-block">git clone
+                        https://github.com/NeerajRana79/whatsapp-message-scheduler-python.git
+                        cd whatsapp-message-scheduler-python</div>
+
+                    <h3>2️⃣ Install Dependencies</h3>
+                    <div class="code-block">pip install -r requirements.txt</div>
+
+                    <h2>🔐 Environment Variables (IMPORTANT)</h2>
+                    <p>For security reasons, Twilio credentials are <strong>NOT</strong> hardcoded in the source code.
+                        Set the following environment variables:</p>
+
+                    <h3>🪟 Windows (PowerShell)</h3>
+                    <div class="code-block">setx TWILIO_ACCOUNT_SID "your_account_sid_here"
+                        setx TWILIO_AUTH_TOKEN "your_auth_token_here"</div>
+
+                    <h3>🐧 macOS / Linux</h3>
+                    <div class="code-block">export TWILIO_ACCOUNT_SID="your_account_sid_here"
+                        export TWILIO_AUTH_TOKEN="your_auth_token_here"</div>
+
+                    <h2>📱 Twilio WhatsApp Sandbox Setup</h2>
+                    <ol>
+                        <li>Create a Twilio account at: <a href="https://www.twilio.com" target="_blank"
+                                style="color: var(--clr-secondary);">https://www.twilio.com</a></li>
+                        <li>Go to Messaging → Try it out → WhatsApp Sandbox</li>
+                        <li>From your WhatsApp, send: <strong>join</strong> to: <strong>+14155238886</strong></li>
+                    </ol>
+                    <p><em>⚠️ This step is required to send WhatsApp messages in trial mode.</em></p>
+
+                    <h2>▶️ How to Run the Project</h2>
+                    <div class="code-block">python main.py</div>
+
+                    <h3>Sample Input</h3>
+                    <div class="code-block">Enter the recipient name: Neeraj
+                        Enter WhatsApp number with country code: +919xxxxxxxxx
+                        Enter the message: Hello, this message is scheduled!
+                        Enter date (YYYY-MM-DD): 2026-02-21
+                        Enter time (HH:MM): 22:07</div>
+
+                    <h2>🔒 Security Best Practices Used</h2>
+                    <ul>
+                        <li>❌ No credentials stored in source code</li>
+                        <li>✅ Uses environment variables</li>
+                        <li>✅ <code>.env</code> and sensitive files ignored via <code>.gitignore</code></li>
+                        <li>✅ Compatible with GitHub secret scanning</li>
+                    </ul>
+
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container">
+            <a href="index.html" class="footer-logo">NR<span class="dot">.</span></a>
+            <p>&copy; 2026 Neeraj Rana. All Rights Reserved.</p>
+            <div class="footer-social">
+                <a href="https://linkedin.com/in/neeraj-rana-a9837032b" target="_blank"><i
+                        class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/NeerajRana79" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script>
+        // Scroll Reveal Animation Basic
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 100;
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                }
+            }
+        }
+        window.addEventListener("scroll", reveal);
+        // Trigger reveal on load
+        reveal();
+
+        // Mouse Glow Effect Tracking
+        const cursorGlow = document.querySelector('.cursor-glow');
+        let isMoving = false;
+
+        document.addEventListener('mousemove', (e) => {
+            cursorGlow.style.opacity = '1';
+            cursorGlow.style.left = e.clientX + 'px';
+            cursorGlow.style.top = e.clientY + 'px';
+            isMoving = true;
+        });
+
+        // Hide glow when mouse leaves window
+        document.addEventListener('mouseleave', () => {
+            cursorGlow.style.opacity = '0';
+        });
+
+        // Optional: reduce glow opacity when resting
+        setInterval(() => {
+            if (!isMoving && cursorGlow.style.opacity === '1') {
+                cursorGlow.style.opacity = '0.5';
+            }
+            isMoving = false;
+        }, 2000);
+    </script>
+</body>
+
+</html>
